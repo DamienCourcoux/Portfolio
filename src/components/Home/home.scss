@@ -1,0 +1,106 @@
+@use 'src/styles/vars';
+
+.home {
+  background: vars.$mainColor;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  align-items: stretch;
+  padding-top: 6rem;
+
+  &__cloud{
+    position: absolute;
+
+    &.cloud1 {
+      width: 200px;
+      top: 50px;
+      left: 200px;
+    }
+
+    &.cloud2 {
+      width: 400px;
+      top: 100px;
+      right: 50px;
+    }
+
+    &.cloud3{
+      width: 100px;
+      bottom: 250px;
+    }
+  }
+
+  &__profil {
+    z-index: 2;
+
+    &--title {
+      font-size: 6rem;
+      color: transparent;
+      -webkit-text-stroke: 4px vars.$altColor;
+    }
+
+    &--subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: vars.$altColor;
+    }
+
+    &--reseaux {
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-right: 1rem;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+
+        a {
+          font-size: 1.5rem;
+          color: vars.$altColor;
+
+          &:hover {
+            color: vars.$altColorHover;
+          }
+        }
+      }
+    }
+
+    &--buttons {
+      margin: 1rem 0;
+
+      &--button {
+        padding: .5rem 1rem;
+        border: 2px solid vars.$lightColor;
+        border-radius: 5px;
+        background: vars.$lightColor;
+        box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.30);
+        -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.30);
+
+        &:hover {
+          transform: scale(0.9);
+        }
+
+        &.cv {
+          border: 2px solid vars.$altColor;
+          color: vars.$altColor;
+          background: transparent;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  &__men {
+    z-index: 2;
+    padding-bottom: 2rem;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: 0;
+  }
+}
