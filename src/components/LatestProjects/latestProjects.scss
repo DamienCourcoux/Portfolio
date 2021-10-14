@@ -1,0 +1,51 @@
+@use 'src/styles/vars';
+
+.latestProjects {
+  background: vars.$altColor;
+  padding: 5rem;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    &--title {
+      color: vars.$mainColor;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    &--subtitle {
+      color: vars.$mainColor;
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      margin: .5rem 0 2rem 0;
+
+      &::before {
+        content: '// ';
+      }
+    }
+
+    &--buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+
+      button {
+        padding: 1rem 2rem;
+        border: 4px solid vars.$lightColor;
+        border-radius: 5px;
+        background: transparent;
+        color: vars.$lightColor;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: inset 0 0 0 0 vars.$lightColor;
+        transition: ease-in .5s;
+        
+        &:hover {
+          box-shadow: inset 350px 0 0 0 vars.$lightColor;
+          color: vars.$altColor;
+        }
+      }
+    }
+  }
+}

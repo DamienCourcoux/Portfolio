@@ -36,7 +36,7 @@ const About = () => (
         J'y ai pu me spécialiser en Frontend !
       </p>
       <p className="about__container--paragraph paragraph5">Aujourd'hui je suis prêt à continuer mon expérience à vos côtés !!</p>
-      <p className="about__container--paragraph paragraph6">Pour en apprendre plus, regardez <a href="/">mon cv</a>.</p>
+      <p className="about__container--paragraph paragraph6">Pour en apprendre plus, regardez <a href="/" title="Mon CV">mon cv</a>.</p>
     </div>
   </section>
 );
