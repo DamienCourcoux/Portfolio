@@ -6,6 +6,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  z-index: 7;
 
   &__logo {
     width: 50px;
