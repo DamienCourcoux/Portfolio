@@ -1,14 +1,15 @@
 // == Import
 import Typical from 'react-typical';
 
-import Cloud from 'src/assets/img/logo.png';
+import Cloud1 from 'src/assets/img/cloud1.png';
+import Cloud2 from 'src/assets/img/cloud2.png';
 import './about.scss';
 
 // == Composant
 const About = () => (
   <section className="about">
-    <img className="about__cloud cloud1" src={Cloud} alt="img d'un nuage pour faire de la déco sur la section about" />
-    <img className="about__cloud cloud2" src={Cloud} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="about__cloud cloud1" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section about" />
+    <img className="about__cloud cloud2" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
     <h1 className="about__title">
       <Typical
         steps={['Salut', 1000, 'Salut, moi c\'est John Doe', 2000, 'Salut, moi c\'est euh...', 1000, 'Salut, moi c\'est Damien', 3000]}

@@ -1,0 +1,42 @@
+@use 'src/styles/vars';
+
+.contact {
+  background: vars.$mainColor;
+  color: vars.$altColor;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 5px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  &__title {
+    color: vars.$altColor;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  &__mailto {
+    padding: 1rem 2rem;
+    border: 4px solid vars.$altColor;
+    border-radius: 5px;
+    background: transparent;
+    color: vars.$altColor;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 vars.$altColor;
+    transition: ease-in .5s;
+    
+    &:hover {
+      box-shadow: inset 350px 0 0 0 vars.$altColor;
+      color: vars.$lightColor;
+    }
+  }
+}

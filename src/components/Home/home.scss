@@ -8,14 +8,15 @@
   justify-content: space-around;
   position: relative;
   align-items: stretch;
-  padding-top: 6rem;
+  padding: 3rem;
+  overflow: hidden;
 
   &__cloud{
     position: absolute;
 
     &.cloud1 {
       width: 200px;
-      top: 50px;
+      top: 0;
       left: 200px;
     }
 
@@ -25,9 +26,21 @@
       right: 50px;
     }
 
-    &.cloud3{
+    &.cloud3 {
       width: 100px;
       bottom: 250px;
+    }
+
+    &.cloud4 {
+      width: 150px;
+      right: -25px;
+      top: -25px;
+    }
+
+    &.cloud5 {
+      width: 200px;
+      bottom: 150px;
+      left: 0;
     }
   }
 

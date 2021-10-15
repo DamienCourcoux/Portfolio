@@ -4,7 +4,9 @@ import {
   FaGithub,
   FaEnvelope,
 } from 'react-icons/fa';
-import Cloud from 'src/assets/img/logo.png';
+import Cloud1 from 'src/assets/img/cloud1.png';
+import Cloud2 from 'src/assets/img/cloud2.png';
+import Logo from 'src/assets/img/logo.png';
 import Men from 'src/assets/img/men.png';
 import Wave from 'src/assets/img/wave.svg';
 import './home.scss';
@@ -12,9 +14,11 @@ import './home.scss';
 // == Composant
 const Home = () => (
   <section className="home">
-    <img className="home__cloud cloud1" src={Cloud} alt="img d'un nuage pour faire de la déco sur la section home" />
-    <img className="home__cloud cloud2" src={Cloud} alt="img d'un nuage pour faire de la déco sur la section home" />
-    <img className="home__cloud cloud3" src={Cloud} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud1" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud2" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud3" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud4" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud5" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
     <div className="home__profil">
       <h1 className="home__profil--title">Damien <br /> Courcoux</h1>
       <p className="home__profil--subtitle">Développeur Web Frontend</p>
