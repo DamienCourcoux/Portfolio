@@ -17,31 +17,42 @@
     &.cloud1 {
       width: 200px;
       top: 0;
-      left: 200px;
+      left: -200px;
+      animation: 50s linear 1s infinite cloud1;
     }
+    @keyframes cloud1 { from { left: -200px; } to { left: 2000px; }  }
 
     &.cloud2 {
       width: 400px;
       top: 100px;
-      right: 50px;
+      left: -400px;
+      animation: 70s linear 1s infinite cloud2;
     }
+    @keyframes cloud2 { from { left: -400px; } to { left: 2000px; }  }
 
     &.cloud3 {
       width: 100px;
       bottom: 250px;
+      left: -100px;
+      animation: 30s linear 1s infinite cloud3;
     }
+    @keyframes cloud3 { from { left: -100px; } to { left: 2000px; }  }
 
     &.cloud4 {
       width: 150px;
-      right: -25px;
       top: -25px;
+      left: -600px;
+      animation: 40s linear 1s infinite cloud4;
     }
+    @keyframes cloud4 { from { left: -600px; } to { left: 2000px; }  }
 
     &.cloud5 {
       width: 200px;
       bottom: 150px;
-      left: 0;
+      left: -800px;
+      animation: 50s linear 1s infinite cloud5;
     }
+    @keyframes cloud5 { from { left: -800px; } to { left: 2000px; }  }
   }
 
   &__profil {
