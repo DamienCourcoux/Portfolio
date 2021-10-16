@@ -16,17 +16,17 @@ const Footer = () => (
     </div>
     <ul className="footer__reseaux">
       <li>
-        <a href="/" title="Mon Linkedin">
+        <a href="https://www.linkedin.com/in/damiencourcoux/" title="Mon Linkedin" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
       </li>
       <li>
-        <a href="/" title="Mon GitHub">
+        <a href="https://github.com/DamienCourcoux" title="Mon GitHub" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
       </li>
       <li>
-        <a href="/" title="Prendre contact">
+        <a href="mailto:damsmailspro@gmail.com" title="Prendre contact" target="_blank" rel="noopener noreferrer">
           <FaEnvelope />
         </a>
       </li>

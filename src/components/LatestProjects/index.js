@@ -10,9 +10,9 @@ const LatestProjects = () => (
       <h1 className="latestProjects__container--title">Mes derniers projets</h1>
       <p className="latestProjects__container--subtitle"><em>importer par l'api GitHub</em></p>
       <div className="latestProjects__container--buttons">
-        <button type="button" title="Mon dernier projet">Mon dernier projet</button>
-        <button type="button" title="Mon avant dernier projet">Mon avant dernier projet</button>
-        <button type="button" title="Voir tout les projets">Voir tout les projets</button>
+        <a href="/" title="Mon dernier projet">Mon dernier projet</a>
+        <a href="/" title="Mon avant dernier projet">Mon avant dernier projet</a>
+        <a href="/" title="Voir tout les projets">Voir tout les projets</a>
       </div>
     </div>
   </section>

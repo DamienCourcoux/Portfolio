@@ -20,7 +20,7 @@
 
   &__paragraph {
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
   }
 
   &__mailto {
@@ -30,7 +30,6 @@
     background: transparent;
     color: vars.$altColor;
     font-weight: bold;
-    text-transform: uppercase;
     box-shadow: inset 0 0 0 0 vars.$altColor;
     transition: ease-in .5s;
     

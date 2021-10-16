@@ -26,24 +26,24 @@ const Home = () => (
       <p className="home__profil--subtitle">Développeur Web Frontend</p>
       <ul className="home__profil--reseaux">
         <li>
-          <a href="/" title="Mon Linkedin">
+          <a href="https://www.linkedin.com/in/damiencourcoux/" title="Mon Linkedin" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
         </li>
         <li>
-          <a href="/" title="Mon GitHub">
+          <a href="https://github.com/DamienCourcoux" title="Mon GitHub" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
         </li>
         <li>
-          <a href="/" title="Prendre contact">
+          <a href="mailto:damsmailspro@gmail.com" title="Prendre contact" target="_blank" rel="noopener noreferrer">
             <FaEnvelope />
           </a>
         </li>
       </ul>
       <div className="home__profil--buttons">
-        <button className="home__profil--buttons--button projets" type="button" title="Mes projets">Mes projets</button>
-        <button className="home__profil--buttons--button cv" type="button" title="Mon CV">Mon CV</button>
+        <a className="home__profil--buttons--button projets" href="/" title="Mes projets">Mes projets</a>
+        <a className="home__profil--buttons--button cv" href="/" title="Mon CV">Mon CV</a>
       </div>
     </div>
     <img className="home__men" src={Men} alt="illustration d'un homme (décorative)" />
