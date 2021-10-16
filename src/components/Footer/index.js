@@ -26,7 +26,7 @@ const Footer = () => (
         </a>
       </li>
       <li>
-        <a href="/" title="Me contacter">
+        <a href="/" title="Prendre contact">
           <FaEnvelope />
         </a>
       </li>

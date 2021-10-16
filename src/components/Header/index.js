@@ -1,4 +1,5 @@
 // == Import
+
 import Logo from 'src/assets/img/logo.png';
 import { FaBars } from 'react-icons/fa';
 import './header.scss';

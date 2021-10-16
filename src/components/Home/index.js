@@ -16,9 +16,11 @@ const Home = () => (
   <section className="home">
     <img className="home__cloud cloud1" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
     <img className="home__cloud cloud2" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
-    <img className="home__cloud cloud3" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
-    <img className="home__cloud cloud4" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud3" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud4" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
     <img className="home__cloud cloud5" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud6" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+    <img className="home__cloud cloud7" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
     <div className="home__profil">
       <h1 className="home__profil--title">Damien <br /> Courcoux</h1>
       <p className="home__profil--subtitle">Développeur Web Frontend</p>
@@ -34,14 +36,14 @@ const Home = () => (
           </a>
         </li>
         <li>
-          <a href="/" title="Me contacter">
+          <a href="/" title="Prendre contact">
             <FaEnvelope />
           </a>
         </li>
       </ul>
       <div className="home__profil--buttons">
         <button className="home__profil--buttons--button projets" type="button" title="Mes projets">Mes projets</button>
-        <button className="home__profil--buttons--button cv" type="button" title="Mes CV">Mon CV</button>
+        <button className="home__profil--buttons--button cv" type="button" title="Mon CV">Mon CV</button>
       </div>
     </div>
     <img className="home__men" src={Men} alt="illustration d'un homme (décorative)" />
