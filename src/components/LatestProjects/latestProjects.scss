@@ -4,6 +4,7 @@
   background: vars.$altColor;
   padding: 5rem;
   position: relative;
+  overflow: hidden;
 
   &__cloud {
     position: absolute;

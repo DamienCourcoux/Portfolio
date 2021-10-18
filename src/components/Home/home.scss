@@ -20,7 +20,7 @@
       left: -200px;
       animation: 110s linear 1s infinite cloud1;
     }
-    @keyframes cloud1 { from { left: -200px; } to { left: 2000px; }  }
+    @keyframes cloud1 { from { left: -200px; } to { left: 100vw; }  }
 
     &.cloud2 {
       width: 400px;
@@ -28,7 +28,7 @@
       left: -400px;
       animation: 190s linear 1s infinite cloud2;
     }
-    @keyframes cloud2 { from { left: -400px; } to { left: 2000px; }  }
+    @keyframes cloud2 { from { left: -400px; } to { left: 100vw; }  }
 
     &.cloud3 {
       width: 150px;
@@ -36,7 +36,7 @@
       left: -600px;
       animation: 90s linear 1s infinite cloud3;
     }
-    @keyframes cloud3 { from { left: -600px; } to { left: 2000px; }  }
+    @keyframes cloud3 { from { left: -600px; } to { left: 100vw; }  }
 
     
     &.cloud4 {
@@ -45,7 +45,7 @@
       left: -800px;
       animation: 70s linear 1s infinite cloud4;
     }
-    @keyframes cloud4 { from { left: -800px; } to { left: 2000px; }  }
+    @keyframes cloud4 { from { left: -800px; } to { left: 100vw; }  }
     
     &.cloud5 {
       width: 200px;
@@ -53,7 +53,7 @@
       left: -1000px;
       animation: 110s linear 1s infinite cloud5;
     }
-    @keyframes cloud5 { from { left: -1000px; } to { left: 2000px; }  }
+    @keyframes cloud5 { from { left: -1000px; } to { left: 100vw; }  }
 
     &.cloud6 {
       width: 500px;
@@ -61,7 +61,7 @@
       left: -1200px;
       animation: 230s linear 1s infinite cloud6;
     }
-    @keyframes cloud6 { from { left: -1200px; } to { left: 2000px; }  }
+    @keyframes cloud6 { from { left: -1200px; } to { left: 100vw; }  }
 
     &.cloud7 {
       width: 50px;
@@ -69,7 +69,7 @@
       left: -50px;
       animation: 50s linear 1s infinite cloud7;
     }
-    @keyframes cloud7 { from { left: -50px; } to { left: 2000px; }  }
+    @keyframes cloud7 { from { left: -50px; } to { left: 100vw; }  }
   }
 
   &__profil {
