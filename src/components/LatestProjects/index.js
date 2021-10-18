@@ -1,4 +1,6 @@
 // == Import
+import { NavLink } from 'react-router-dom';
+
 import Cloud2 from 'src/assets/img/cloud2.png';
 import './latestProjects.scss';
 
@@ -12,7 +14,7 @@ const LatestProjects = () => (
       <div className="latestProjects__container--buttons">
         <a href="/" title="Mon dernier projet">Mon dernier projet</a>
         <a href="/" title="Mon avant dernier projet">Mon avant dernier projet</a>
-        <a href="/" title="Voir tout les projets">Voir tout les projets</a>
+        <NavLink exact to="/mesprojets" title="Voir tout les projets">Voir tout les projets</NavLink>
       </div>
     </div>
   </section>

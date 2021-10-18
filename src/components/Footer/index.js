@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaEnvelope,
 } from 'react-icons/fa';
+
 import Logo from 'src/assets/img/logo.png';
 import './footer.scss';
 

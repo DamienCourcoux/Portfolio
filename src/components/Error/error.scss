@@ -1,0 +1,55 @@
+@use 'src/styles/vars';
+
+.error {
+
+  &__404 {
+    background: vars.$mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3rem;
+    overflow: hidden;
+    height: calc(100vh - (265px + 4rem));
+  
+    &--title {
+      font-size: 10rem;
+      color: vars.$altColor;
+      z-index: 2;
+    }
+  
+    &--subtitle {
+      font-size: 1.5rem;
+      color: vars.$altColor;
+      margin-bottom: 1rem;
+      z-index: 2;
+    }
+  
+    &--button {
+      padding: .5rem 1rem;
+      border: 2px solid vars.$altColor;
+      border-radius: 5px;
+      background: transparent;
+      color: vars.$altColor;
+      margin-right: 1rem;
+      box-shadow: inset 0 0 0 0 vars.$altColor;
+      transition: ease-in .5s;
+      z-index: 2;
+      
+      &:hover {
+      box-shadow: inset 150px 0 0 0 vars.$altColor;
+      color: vars.$lightColor;
+      }
+    }
+  }
+
+  &__footer {
+    background: #36414f;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

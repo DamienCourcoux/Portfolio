@@ -48,7 +48,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: vars.$lightColor;
+  background: vars.$altColor;
 }
 
 /*
@@ -109,10 +109,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   
   span.bm-cross {
-    width: .5rem !important; 
+    width: .2rem !important; 
     height: 2rem !important;
+    border-radius: 5px;
   }
 }
-
+.bm-burger-button {
+  width: 31px;
+  height: 25px;
+  top: 12px;
+}
+.bm-burger-bars {
+  border-radius: 5px;
+}
 
 }

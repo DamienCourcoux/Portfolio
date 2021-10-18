@@ -1,5 +1,6 @@
 // == Import
 import Typical from 'react-typical';
+import { NavLink } from 'react-router-dom';
 
 import Cloud1 from 'src/assets/img/cloud1.png';
 import Cloud2 from 'src/assets/img/cloud2.png';
@@ -37,7 +38,7 @@ const About = () => (
         J'y ai pu me spécialiser en Frontend !
       </p>
       <p className="about__container--paragraph paragraph5">Aujourd'hui je suis prêt à continuer mon expérience à vos côtés !!</p>
-      <p className="about__container--paragraph paragraph6">Pour en apprendre plus, regardez <a href="/" title="Mon CV">mon cv</a>.</p>
+      <p className="about__container--paragraph paragraph6">Pour en apprendre plus, regardez <NavLink exact to="/moncv" title="Mon CV">mon cv</NavLink>.</p>
     </div>
   </section>
 );

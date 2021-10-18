@@ -1,4 +1,6 @@
 // == Import
+import { NavLink } from 'react-router-dom';
+
 import {
   FaLinkedin,
   FaGithub,
@@ -42,8 +44,8 @@ const Home = () => (
         </li>
       </ul>
       <div className="home__profil--buttons">
-        <a className="home__profil--buttons--button projets" href="/" title="Mes projets">Mes projets</a>
-        <a className="home__profil--buttons--button cv" href="/" title="Mon CV">Mon CV</a>
+        <NavLink exact className="home__profil--buttons--button projets" to="/mesprojets" title="Mes projets">Mes projets</NavLink>
+        <NavLink exact className="home__profil--buttons--button cv" to="/moncv" title="Mon CV">Mon CV</NavLink>
       </div>
     </div>
     <img className="home__men" src={Men} alt="illustration d'un homme (décorative)" />
