@@ -10,7 +10,7 @@ import './footer.scss';
 
 // == Composant
 const Footer = () => (
-  <section className="footer">
+  <footer className="footer">
     <div className="footer__copyright">
       <img src={Logo} alt="logo du site" />
       <p>Damien Courcoux © 2021</p>
@@ -32,7 +32,7 @@ const Footer = () => (
         </a>
       </li>
     </ul>
-  </section>
+  </footer>
 );
 
 // == Export

@@ -10,6 +10,7 @@ import LatestProjects from 'src/components/LatestProjects';
 import Contact from 'src/components/Contact';
 import Footer from 'src/components/Footer';
 import Error from 'src/components/Error';
+import Projects from 'src/components/Projects';
 
 import { GET_PROJECTS } from 'src/store/action';
 
@@ -33,6 +34,9 @@ const App = () => {
           <LatestProjects />
           <Contact />
           <Footer />
+        </Route>
+        <Route exact path="/mesprojets">
+          <Projects />
         </Route>
         <Route>
           <Error />

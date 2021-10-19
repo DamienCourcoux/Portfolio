@@ -20,7 +20,7 @@ const LatestProjects = () => {
           {
             hasError ? ''
               : projects.map((project) => (
-                <a key={project.id} href={project.clone_url} title={project.name}>{project.name}</a>
+                <a key={project.id} href={project.clone_url} title={project.name} target="_blank" rel="noopener noreferrer">{project.name}</a>
               ))
           }
           {

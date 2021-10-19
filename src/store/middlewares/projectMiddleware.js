@@ -4,6 +4,9 @@ import {
   GET_PROJECTS,
   createGetProjectsSuccess,
   createGetProjectsError,
+  GET_ALL_PROJECTS,
+  createGetAllProjectsSuccess,
+  createGetAllProjectsError,
 } from 'src/store/action';
 
 const projectMiddleware = (store) => (next) => (action) => {
@@ -16,8 +19,18 @@ const projectMiddleware = (store) => (next) => (action) => {
         .catch(() => {
           store.dispatch(createGetProjectsError());
         });
+      next(action);
       break;
-
+    case GET_ALL_PROJECTS:
+      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=9')
+        .then((response) => {
+          store.dispatch(createGetAllProjectsSuccess(response.data));
+        })
+        .catch(() => {
+          store.dispatch(createGetAllProjectsError());
+        });
+      next(action);
+      break;
     default:
       next(action);
       break;

@@ -15,8 +15,9 @@
   
     &--title {
       font-size: 10rem;
-      color: vars.$altColor;
+      color: transparent;
       z-index: 2;
+      -webkit-text-stroke: 4px vars.$altColor;
     }
   
     &--subtitle {
@@ -51,5 +52,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &--copyright {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+  
+      img {
+        width: 50px;
+        margin-right: .5rem;
+      }
+  
+      p {
+        color: vars.$mainColor;
+        font-weight: bold;
+        cursor: default;
+      }
+    }
+  
+    &--reseaux {
+      display: flex;
+      align-items: center;
+  
+      li {
+        margin-right: 1rem;
+  
+        &:hover {
+          transform: scale(0.9);
+        }
+  
+        a {
+          font-size: 1.5rem;
+          color: vars.$lightColor;
+  
+          &:hover {
+            color: vars.$lightColorHover;
+          }
+        }
+      }
+    }
   }
 }

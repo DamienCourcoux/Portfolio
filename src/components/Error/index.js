@@ -33,12 +33,12 @@ const Error = () => (
         Redescendre
       </NavLink>
     </div>
-    <div className="error__footer">
-      <div className="footer__copyright">
+    <footer className="error__footer">
+      <div className="error__footer--copyright">
         <img src={Logo} alt="logo du site" />
         <p>Damien Courcoux © 2021</p>
       </div>
-      <ul className="footer__reseaux">
+      <ul className="error__footer--reseaux">
         <li>
           <a href="https://www.linkedin.com/in/damiencourcoux/" title="Mon Linkedin" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
@@ -55,7 +55,7 @@ const Error = () => (
           </a>
         </li>
       </ul>
-    </div>
+    </footer>
   </div>
 );
 
