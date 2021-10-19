@@ -11,7 +11,7 @@
     position: relative;
     padding: 3rem;
     overflow: hidden;
-    height: calc(100vh - (265px + 4rem));
+    height: calc(100vh - (202px + 4rem));
   
     &--title {
       font-size: 10rem;
@@ -30,7 +30,7 @@
     &--button {
       padding: .5rem 1rem;
       border: 2px solid vars.$altColor;
-      border-radius: 5px;
+      border-radius: 7px;
       background: transparent;
       color: vars.$altColor;
       margin-right: 1rem;

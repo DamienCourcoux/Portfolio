@@ -11,6 +11,7 @@ import Contact from 'src/components/Contact';
 import Footer from 'src/components/Footer';
 import Error from 'src/components/Error';
 import Projects from 'src/components/Projects';
+import Cv from 'src/components/Cv';
 
 import { GET_PROJECTS } from 'src/store/action';
 
@@ -37,6 +38,9 @@ const App = () => {
         </Route>
         <Route exact path="/mesprojets">
           <Projects />
+        </Route>
+        <Route exact path="/moncv">
+          <Cv />
         </Route>
         <Route>
           <Error />

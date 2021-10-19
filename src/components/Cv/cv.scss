@@ -1,7 +1,6 @@
 @use 'src/styles/vars';
 
-.projects {
-
+.cv {
   &__headband {
     background: vars.$mainColor;
     display: flex;
@@ -55,83 +54,38 @@
       z-index: 2;
       margin: .5rem 0;
     }
-
-    &--subtitle {
-      color: vars.$altColor;
-      font-family: 'Montserrat', sans-serif;
-      font-style: italic;
-      margin: .5rem 0 1rem 0;
-      z-index: 2;
-
-      &::before {
-        content: '// ';
-      }
-    }
   }
-  
-  &__card {
+
+  &__container {
     background: vars.$altColor;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 2rem 0;
+    flex-direction: column;
+    padding: 0 4rem;
 
-    &--project {
-      background: vars.$lightColor;
-      border-radius: 7px;
-      padding: 2rem;
-      margin: 1.5rem 0;
-      width: 400px;
-      max-width: 400px;
-      transition: 0.5s;
+    h2 {
+      margin: 4rem 0;
+      font-size: 2rem;
+      color: #c0daff;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      &:hover {
-        transform: translateY(-10px);
-      }
-
-      h1 {
-        color: vars.$altColor;
-        text-transform: uppercase;
-      }
-
-      p {
-        color: vars.$altColor;
-        margin: 1rem 0;
-      }
+      align-items: center;
+      margin-right: 1rem;
 
       a {
-        color: vars.$altColor;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        margin-left: .5rem;
 
         &:hover {
-          color: vars.$altColorHover;
+          color: vars.$lightColor;
         }
       }
     }
 
-    &--plus {
-      background: vars.$lightColor;
-      color: vars.$altColor;
+    img {
+      width: 70%;
       border-radius: 7px;
-      padding: 2rem;
-      margin: 1.5rem 0;
-      width: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      transition: 0.5s;
-
-      &:hover {
-        transform: translateY(-10px);
-        text-decoration: underline;
-        color: vars.$altColorHover;
-      }
+      margin: 0 auto;
     }
   }
 
