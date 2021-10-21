@@ -63,3 +63,37 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .latestProjects__container--buttons {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .latestProjects__container--buttons {
+    a {
+      z-index: 2;
+    }
+    a:hover {
+      box-shadow: inset 700px 0 0 0 vars.$lightColor;
+    }
+  }
+}
+
+@media (max-width:660px) {
+  .latestProjects {
+    padding: 3rem;
+  }
+
+  .latestProjects__container--buttons {
+    a:hover {
+      box-shadow: inset 500px 0 0 0 vars.$lightColor;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .latestProjects__container--title {
+    font-size: 1.5rem;
+  }
+}

@@ -80,15 +80,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   color: vars.$altColor;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-/* Individual item */
-.bm-item {
-  display: inline-block;
-  padding: 1rem;
+  .bm-item {
+    display: flex !important;
+    flex-direction: column;
 
-  &:hover {
-    color: vars.$lightColor;
+    a {
+      padding: 1rem;
+
+      &:hover {
+        color: vars.$lightColor;
+      }
+    }
   }
 }
 
@@ -122,5 +129,37 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-burger-bars {
   border-radius: 7px;
 }
+
+  &__footer {
+
+    &--copyright {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 50px;
+      }
+
+      p {
+        font-size: 1rem;
+        text-transform: none;
+        margin-left: 0.5rem;
+      }
+    }
+
+    &--reseaux {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1.1rem 0;
+
+      li {
+        
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 
 }

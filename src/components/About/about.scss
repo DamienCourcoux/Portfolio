@@ -58,3 +58,19 @@
     }
   }
 }
+
+@media (max-width:660px) {
+  .about {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__title {
+    font-size: 1.5rem;
+  }
+
+  .about__container--paragraph {
+    font-size: 1.2rem;
+  }
+}

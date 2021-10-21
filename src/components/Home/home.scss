@@ -140,3 +140,40 @@
     bottom: 0;
   }
 }
+
+@media (max-width: 1110px) {
+  .home {
+    padding: 4rem 4rem 0 4rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .home__profil--title {
+    font-size: 4rem;
+    -webkit-text-stroke: 3px vars.$altColor;
+  }
+  
+  .home__profil--subtitle {
+    font-size: 1.2rem;
+  }
+
+  .home__men {
+    width: 300px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .home__profil--title {
+    font-size: 3.5rem;
+    -webkit-text-stroke: 2.5px vars.$altColor;
+  }
+
+  .home__profil--subtitle {
+    font-size: 1rem;
+  }
+
+  .home__men {
+    width: 250px;
+  }
+}

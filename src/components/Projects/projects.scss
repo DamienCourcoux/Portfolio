@@ -183,3 +183,16 @@
     }
   }
 }
+
+@media (max-width: 560px) {
+  .projects__headband--title {
+    font-size: 4rem;
+    -webkit-text-stroke: 3px vars.$altColor;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects__card {
+    padding: 2rem;
+  }
+}
