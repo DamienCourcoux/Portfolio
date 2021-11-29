@@ -49,21 +49,22 @@ const Projects = () => {
             <div key={project.id} className="projects__card--project" href={project.clone_url} title={project.name} target="_blank" rel="noopener noreferrer">
               <h1>{project.name}</h1>
               <p>{project.description}</p>
-              <ul>
+              <ul className="projects__card--project--languages">
                 {
                   project.topics.map((topic) => {
                     if (topic === 'javascript') {
-                      return <SiJavascript key={topic} className="projects__card--project--icon javascript" title="JavaScript" />;
+                      return <SiJavascript key={topic} className="icon javascript" title="JavaScript" />;
                     }
                     if (topic === 'react') {
-                      return <SiReact key={topic} className="projects__card--project--icon react" title="React" />;
+                      return <SiReact key={topic} className="icon react" title="React" />;
                     }
                     if (topic === 'redux') {
-                      return <SiRedux key={topic} className="projects__card--project--icon redux" title="Redux" />;
+                      return <SiRedux key={topic} className="icon redux" title="Redux" />;
                     }
                     if (topic === 'scss') {
-                      return <SiSass key={topic} className="projects__card--project--icon scss" title="Scss" />;
+                      return <SiSass key={topic} className="icon scss" title="Scss" />;
                     }
+                    return '';
                   })
                 }
               </ul>

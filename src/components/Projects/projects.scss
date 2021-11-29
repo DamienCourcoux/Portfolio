@@ -139,25 +139,36 @@
         margin: .5rem 0;
       }
 
-      &--icon {
-        font-size: 1.5rem;
-        margin: .5rem .5rem .5rem 0;
-      }
+      &--languages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
 
-      .javascript {
-        color: vars.$javascript;
-      }
+        .icon {
+          font-size: 1.5rem;
+          margin-right: 1rem;
 
-      .react {
-        color: vars.$react;
-      }
-
-      .redux {
-        color: vars.$redux;
-      }
-
-      .scss {
-        color: vars.$scss;
+          &:last-child {
+            margin: 0;
+          }
+        }
+  
+        .javascript {
+          color: vars.$javascript;
+        }
+  
+        .react {
+          color: vars.$react;
+        }
+  
+        .redux {
+          color: vars.$redux;
+        }
+  
+        .scss {
+          color: vars.$scss;
+        }
       }
 
       &--share {
