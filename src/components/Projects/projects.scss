@@ -21,23 +21,50 @@
         left: -200px;
         animation: 110s linear 1s infinite cloud1;
       }
-      @keyframes cloud1 { from { left: -200px; } to { left: 100vw; }  }
-  
+
+      @keyframes cloud1 {
+        from {
+          left: -200px;
+        }
+
+        to {
+          left: 100vw;
+        }
+      }
+
       &.cloud2 {
         width: 300px;
         top: 150px;
         left: -300px;
         animation: 150s linear 1s infinite cloud2;
       }
-      @keyframes cloud2 { from { left: -400px; } to { left: 100vw; }  }
-  
+
+      @keyframes cloud2 {
+        from {
+          left: -400px;
+        }
+
+        to {
+          left: 100vw;
+        }
+      }
+
       &.cloud3 {
         width: 150px;
         top: 80px;
         left: -600px;
         animation: 90s linear 1s infinite cloud3;
       }
-      @keyframes cloud3 { from { left: -600px; } to { left: 100vw; }  }
+
+      @keyframes cloud3 {
+        from {
+          left: -600px;
+        }
+
+        to {
+          left: 100vw;
+        }
+      }
 
       &.cloud7 {
         width: 50px;
@@ -45,7 +72,16 @@
         left: -70px;
         animation: 50s linear 1s infinite cloud7;
       }
-      @keyframes cloud7 { from { left: -70px; } to { left: 100vw; }  }
+
+      @keyframes cloud7 {
+        from {
+          left: -70px;
+        }
+
+        to {
+          left: 100vw;
+        }
+      }
     }
 
     &--title {
@@ -68,7 +104,7 @@
       }
     }
   }
-  
+
   &__card {
     background: vars.$altColor;
     display: flex;
@@ -100,7 +136,34 @@
 
       p {
         color: vars.$altColor;
-        margin: 1rem 0;
+        margin: .5rem 0;
+      }
+
+      &--icon {
+        font-size: 1.5rem;
+        margin: .5rem .5rem .5rem 0;
+      }
+
+      .javascript {
+        color: vars.$javascript;
+      }
+
+      .react {
+        color: vars.$react;
+      }
+
+      .redux {
+        color: vars.$redux;
+      }
+
+      .scss {
+        color: vars.$scss;
+      }
+
+      &--share {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
 
       a {
@@ -147,34 +210,34 @@
       display: flex;
       align-items: center;
       margin: 1rem 0;
-  
+
       img {
         width: 50px;
         margin-right: .5rem;
       }
-  
+
       p {
         color: vars.$mainColor;
         font-weight: bold;
         cursor: default;
       }
     }
-  
+
     &--reseaux {
       display: flex;
       align-items: center;
-  
+
       li {
         margin-right: 1rem;
-  
+
         &:hover {
           transform: scale(0.9);
         }
-  
+
         a {
           font-size: 1.5rem;
           color: vars.$lightColor;
-  
+
           &:hover {
             color: vars.$lightColorHover;
           }

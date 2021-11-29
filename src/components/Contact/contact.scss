@@ -40,6 +40,12 @@
   }
 }
 
+@media (max-width:800px) {
+  .contact {
+    margin: 0 3rem;
+  }
+}
+
 @media (max-width:560px) {
   .contact__title {
     font-size: 1.5rem;

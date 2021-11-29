@@ -6,7 +6,14 @@ import {
   FaLinkedin,
   FaGithub,
   FaEnvelope,
+  FaGlobe,
 } from 'react-icons/fa';
+import {
+  SiJavascript,
+  SiReact,
+  SiRedux,
+  SiSass,
+} from 'react-icons/si';
 
 import Cloud1 from 'src/assets/img/cloud1.png';
 import Cloud2 from 'src/assets/img/cloud2.png';
@@ -42,9 +49,42 @@ const Projects = () => {
             <div key={project.id} className="projects__card--project" href={project.clone_url} title={project.name} target="_blank" rel="noopener noreferrer">
               <h1>{project.name}</h1>
               <p>{project.description}</p>
-              <a href={project.html_url} title={project.name} target="_blank" rel="noopener noreferrer">
-                <FaGithub />
-              </a>
+              <ul>
+                {
+                  project.topics.map((topic) => {
+                    if (topic === 'javascript') {
+                      return <SiJavascript key={topic} className="projects__card--project--icon javascript" title="JavaScript" />;
+                    }
+                    if (topic === 'react') {
+                      return <SiReact key={topic} className="projects__card--project--icon react" title="React" />;
+                    }
+                    if (topic === 'redux') {
+                      return <SiRedux key={topic} className="projects__card--project--icon redux" title="Redux" />;
+                    }
+                    if (topic === 'scss') {
+                      return <SiSass key={topic} className="projects__card--project--icon scss" title="Scss" />;
+                    }
+                  })
+                }
+              </ul>
+              <ul className="projects__card--project--share">
+                <li>
+                  <a href={project.html_url} title={project.name} target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                  </a>
+                </li>
+                <li>
+                  {
+                    project.homepage === 'https://www.myprofile.me'
+                      ? ''
+                      : (
+                        <a href={project.homepage} title="Voir le projet" target="_blank" rel="noopener noreferrer">
+                          <FaGlobe />
+                        </a>
+                      )
+                  }
+                </li>
+              </ul>
             </div>
           ))
         }
