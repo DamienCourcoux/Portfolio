@@ -2,7 +2,7 @@
 import { slide as Menu } from 'react-burger-menu';
 import { useDispatch, useSelector } from 'react-redux';
 import { createOpenOrNotMenuAction, createCloseMenuAction } from 'src/store/action';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import {
   FaLinkedin,
@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href="/" title="Damien Courcoux"><img className="header__logo" src={Logo} alt="logo du site portfolio" /></a>
+      <Link to="/" title="Damien Courcoux"><img className="header__logo" src={Logo} alt="logo du site portfolio" /></Link>
       <Menu
         right
         width="100%"
