@@ -76,7 +76,7 @@ const Projects = () => {
                 </li>
                 <li>
                   {
-                    project.homepage === 'https://www.myprofile.me'
+                    project.homepage === 'https://www.myprofile.me' || project.homepage === null || project.homepage === ''
                       ? ''
                       : (
                         <a href={project.homepage} title="Voir le projet" target="_blank" rel="noopener noreferrer">
