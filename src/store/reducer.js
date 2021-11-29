@@ -7,6 +7,7 @@ import {
   GET_ALL_PROJECTS,
   GET_ALL_PROJECTS_SUCCESS,
   GET_ALL_PROJECTS_ERROR,
+  MAKE_A_ZOOM,
 } from 'src/store/action';
 
 const initialState = {
@@ -14,6 +15,7 @@ const initialState = {
   allProjects: [],
   isOpen: false,
   hasError: false,
+  isZoom: false,
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -55,6 +57,11 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         hasError: true,
+      };
+    case MAKE_A_ZOOM:
+      return {
+        ...state,
+        isZoom: !state.isZoom,
       };
     default:
       return state;

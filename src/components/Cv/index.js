@@ -1,4 +1,10 @@
 // == Import
+import { useSelector, useDispatch } from 'react-redux';
+
+import {
+  createMakeAZoomAction,
+} from 'src/store/action';
+
 import {
   FaLinkedin,
   FaGithub,
@@ -15,44 +21,59 @@ import CvPng from 'src/assets/img/CV_Courcoux_Damien.png';
 import './cv.scss';
 
 // == Composant
-const Cv = () => (
-  <section className="cv">
-    <div className="cv__headband">
-      <img className="cv__headband--cloud cloud1" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
-      <img className="cv__headband--cloud cloud2" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
-      <img className="cv__headband--cloud cloud3" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
-      <img className="cv__headband--cloud cloud7" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
-      <h1 className="cv__headband--title">Mon cv</h1>
-    </div>
-    <div className="cv__container">
-      <h2>Mon CV <a href={CvPdf} download="CV_Courcoux_Damien.pdf">(télécharger en pdf <FaDownload />)</a></h2>
-      <img src={CvPng} alt="img de mon cv" />
-    </div>
-    <footer className="cv__footer">
-      <div className="cv__footer--copyright">
-        <img src={Logo} alt="logo du site" />
-        <p>Damien Courcoux © 2021</p>
+const Cv = () => {
+  const isZoom = useSelector((state) => state.isZoom);
+
+  const dispatch = useDispatch();
+
+  const handleZoom = () => {
+    dispatch(createMakeAZoomAction());
+  };
+
+  return (
+    <section className="cv">
+      <div className="cv__headband">
+        <img className="cv__headband--cloud cloud1" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+        <img className="cv__headband--cloud cloud2" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
+        <img className="cv__headband--cloud cloud3" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
+        <img className="cv__headband--cloud cloud7" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
+        <h1 className="cv__headband--title">Mon cv</h1>
       </div>
-      <ul className="cv__footer--reseaux">
-        <li>
-          <a href="https://www.linkedin.com/in/damiencourcoux/" title="Mon Linkedin" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/DamienCourcoux" title="Mon GitHub" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-        </li>
-        <li>
-          <a href="mailto:damsmailspro@gmail.com" title="Prendre contact" target="_blank" rel="noopener noreferrer">
-            <FaEnvelope />
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </section>
-);
+      <div className="cv__container">
+        <h2>Mon CV <a href={CvPdf} download="CV_Courcoux_Damien.pdf">(télécharger en pdf <FaDownload />)</a></h2>
+        <img
+          className={isZoom ? 'cv zoom' : 'cv'}
+          src={CvPng}
+          alt="img de mon cv"
+          onClick={handleZoom}
+        />
+      </div>
+      <footer className="cv__footer">
+        <div className="cv__footer--copyright">
+          <img src={Logo} alt="logo du site" />
+          <p>Damien Courcoux © 2021</p>
+        </div>
+        <ul className="cv__footer--reseaux">
+          <li>
+            <a href="https://www.linkedin.com/in/damiencourcoux/" title="Mon Linkedin" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/DamienCourcoux" title="Mon GitHub" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:damsmailspro@gmail.com" title="Prendre contact" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+  );
+};
 
 // == Export
 export default Cv;

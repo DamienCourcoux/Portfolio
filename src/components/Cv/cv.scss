@@ -60,6 +60,7 @@
     background: vars.$altColor;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0 4rem;
 
     h2 {
@@ -82,10 +83,16 @@
       }
     }
 
-    img {
+    .cv {
       width: 70%;
       border-radius: 7px;
       margin: 0 auto;
+      cursor: zoom-in;
+    }
+
+    .zoom {
+      width: 100%;
+      cursor: zoom-out;
     }
   }
 
@@ -139,8 +146,12 @@
 }
 
 @media (max-width: 1000px) {
-  .cv__container img {
+  .cv__container .cv {
     width: 100%;
+    margin: 0;
+  }
+  .cv__container .zoom {
+    width: 130%;
   }
 }
 

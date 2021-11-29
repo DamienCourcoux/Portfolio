@@ -6,6 +6,7 @@ export const GET_PROJECTS_ERROR = 'GET_PROJECTS_ERROR';
 export const GET_ALL_PROJECTS = 'GET_ALL_PROJECTS';
 export const GET_ALL_PROJECTS_SUCCESS = 'GET_ALL_PROJECTS_SUCCESS';
 export const GET_ALL_PROJECTS_ERROR = 'GET_ALL_PROJECTS_ERROR';
+export const MAKE_A_ZOOM = 'MAKE_A_ZOOM';
 
 export const createOpenOrNotMenuAction = () => ({
   type: OPEN_OR_NOT_MENU,
@@ -31,4 +32,8 @@ export const createGetAllProjectsSuccess = (allProjects) => ({
 
 export const createGetAllProjectsError = () => ({
   type: GET_ALL_PROJECTS_ERROR,
+});
+
+export const createMakeAZoomAction = () => ({
+  type: MAKE_A_ZOOM,
 });
