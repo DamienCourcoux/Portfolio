@@ -89,7 +89,6 @@ const Projects = () => {
             </div>
           ))
         }
-        <a className="projects__card--plus" href="https://github.com/DamienCourcoux" title="Mon GitHub" target="_blank" rel="noopener noreferrer">Voir plus de projets</a>
       </div>
       <footer className="projects__footer">
         <div className="projects__footer--copyright">
