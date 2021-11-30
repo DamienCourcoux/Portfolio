@@ -1,5 +1,5 @@
 // == Import
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 
@@ -24,6 +24,12 @@ const App = () => {
   useEffect(() => {
     dispatch({ type: GET_PROJECTS });
   }, []);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="app">
