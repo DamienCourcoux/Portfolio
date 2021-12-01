@@ -25,7 +25,7 @@ const Home = () => (
     <img className="home__cloud cloud7" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
     <div className="home__profil">
       <h1 className="home__profil--title">Damien <br /> Courcoux</h1>
-      <p className="home__profil--subtitle">Développeur Web Frontend</p>
+      <p className="home__profil--subtitle">Développeur Web Frontend - Spécialisé en React</p>
       <ul className="home__profil--reseaux">
         <li>
           <a href="https://www.linkedin.com/in/damiencourcoux/" title="Mon Linkedin" target="_blank" rel="noopener noreferrer">
