@@ -13,6 +13,20 @@ import {
   SiReact,
   SiRedux,
   SiSass,
+  SiNodedotjs,
+  SiHtml5,
+  SiCss3,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiGraphql,
+  SiSemanticuireact,
+  SiMaterialui,
+  SiBulma,
+  SiNextdotjs,
+  SiGatsby,
+  SiTypescript,
+  SiFrontendmentor,
 } from 'react-icons/si';
 
 import Cloud1 from 'src/assets/img/cloud1.png';
@@ -48,21 +62,72 @@ const Projects = () => {
           projects.map((project) => (
             <div key={project.id} className="projects__card--project" href={project.clone_url} title={project.name} target="_blank" rel="noopener noreferrer">
               <h1>{project.name}</h1>
+              {
+                project.topics.map((topic) => {
+                  if (topic === 'frontend-mentor') {
+                    return <em key={topic} className="frontendMentor">Projet trouvé sur <a href="https://www.frontendmentor.io/challenges" title="Frontend Mentor" target="_blank" rel="noopener noreferrer"><SiFrontendmentor className="icon-frontendMentor" /> <span>Frontend</span> Mentor</a></em>;
+                  }
+                  return '';
+                })
+              }
               <p>{project.description}</p>
               <ul className="projects__card--project--languages">
                 {
                   project.topics.map((topic) => {
-                    if (topic === 'javascript') {
-                      return <SiJavascript key={topic} className="icon javascript" title="JavaScript" />;
-                    }
-                    if (topic === 'react') {
-                      return <SiReact key={topic} className="icon react" title="React" />;
-                    }
-                    if (topic === 'redux') {
-                      return <SiRedux key={topic} className="icon redux" title="Redux" />;
-                    }
-                    if (topic === 'scss') {
-                      return <SiSass key={topic} className="icon scss" title="Scss" />;
+                    switch (topic) {
+                      case 'html5': {
+                        return <SiHtml5 key={topic} className="icon html" title="Html5" />;
+                      }
+                      case 'css3': {
+                        return <SiCss3 key={topic} className="icon css" title="Css3" />;
+                      }
+                      case 'javascript': {
+                        return <SiJavascript key={topic} className="icon javascript" title="JavaScript" />;
+                      }
+                      case 'react': {
+                        return <SiReact key={topic} className="icon react" title="React" />;
+                      }
+                      case 'redux': {
+                        return <SiRedux key={topic} className="icon redux" title="Redux" />;
+                      }
+                      case 'scss': {
+                        return <SiSass key={topic} className="icon scss" title="Scss" />;
+                      }
+                      case 'nodejs': {
+                        return <SiNodedotjs key={topic} className="icon nodejs" title="NodeJS" />;
+                      }
+                      case 'mysql': {
+                        return <SiMysql key={topic} className="icon mysql" title="MySql" />;
+                      }
+                      case 'postgresql': {
+                        return <SiPostgresql key={topic} className="icon postgresql" title="Postgresql" />;
+                      }
+                      case 'mongodb': {
+                        return <SiMongodb key={topic} className="icon mongodb" title="Mongodb" />;
+                      }
+                      case 'graphql': {
+                        return <SiGraphql key={topic} className="icon graphql" title="Graphql" />;
+                      }
+                      case 'semantic-ui-react': {
+                        return <SiSemanticuireact key={topic} className="icon semanticuireact" title="Semantic Ui React" />;
+                      }
+                      case 'material-ui': {
+                        return <SiMaterialui key={topic} className="icon materialui" title="Material Ui" />;
+                      }
+                      case 'bulma': {
+                        return <SiBulma key={topic} className="icon bulma" title="Bulma" />;
+                      }
+                      case 'nextjs': {
+                        return <SiNextdotjs key={topic} className="icon nextjs" title="NextJS" />;
+                      }
+                      case 'gatsby': {
+                        return <SiGatsby key={topic} className="icon gatsby" title="Gatsby" />;
+                      }
+                      case 'typescript': {
+                        return <SiTypescript key={topic} className="icon typescript" title="TypeScript" />;
+                      }
+                      default:
+                        break;
                     }
                     return '';
                   })

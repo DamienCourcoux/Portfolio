@@ -134,6 +134,39 @@
         text-transform: uppercase;
       }
 
+      .frontendMentor {
+        font-size: 0.7rem;
+        font-style: italic;
+        margin: .3rem 0;
+        display: flex;
+        align-items: center;
+
+        & a {
+          font-size: inherit;
+          color: #3F54A3;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            color: #67BECE;
+          }
+
+          & .icon-frontendMentor {
+            margin-left: .2rem;
+          }
+
+          & span {
+            text-decoration: #F9C7C5 wavy underline;
+            margin-right: .2rem;
+          }
+        }
+
+        &::before {
+          content: "//";
+          margin-right: .2rem;
+        }
+      }
+
       p {
         color: vars.$altColor;
         margin: .5rem 0;
@@ -141,17 +174,22 @@
 
       &--languages {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: 1rem 0;
 
         .icon {
           font-size: 1.5rem;
-          margin-right: 1rem;
+          margin: 1rem;
+        }
 
-          &:last-child {
-            margin: 0;
-          }
+        .html {
+          color: vars.$html;
+        }
+
+        .css {
+          color: vars.$css;
         }
   
         .javascript {
@@ -168,6 +206,50 @@
   
         .scss {
           color: vars.$scss;
+        }
+
+        .nodejs {
+          color: vars.$nodejs;
+        }
+
+        .mysql {
+          color: vars.$mysql;
+        }
+
+        .postgresql {
+          color: vars.$postgresql;
+        }
+
+        .mongodb {
+          color: vars.$mongodb
+        }
+
+        .graphql {
+          color: vars.$graphql;
+        }
+
+        .semanticuireact {
+          color: vars.$semanticuireact;
+        }
+
+        .materialui {
+          color: vars.$materialui;
+        }
+
+        .bulma {
+          color: vars.$bulma;
+        }
+        
+        .nextjs {
+          color: vars.$nextjs;
+        }
+
+        .gatsby {
+          color: vars.$gatsby
+        }
+
+        .typescript {
+          color: vars.$typescript;
         }
       }
 
