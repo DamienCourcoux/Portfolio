@@ -2,6 +2,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import {
   FaLinkedin,
   FaGithub,
@@ -157,8 +159,8 @@ const Projects = () => {
       </div>
       <footer className="projects__footer">
         <div className="projects__footer--copyright">
-          <img src={Logo} alt="logo du site" />
-          <p>Damien Courcoux © 2021</p>
+          <Link to="/"><img src={Logo} alt="logo du site" /></Link>
+          <Link to="/">Damien Courcoux © 2021</Link>
         </div>
         <ul className="projects__footer--reseaux">
           <li>

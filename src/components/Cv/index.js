@@ -5,6 +5,8 @@ import {
   createMakeAZoomAction,
 } from 'src/store/action';
 
+import { Link } from 'react-router-dom';
+
 import {
   FaLinkedin,
   FaGithub,
@@ -50,8 +52,8 @@ const Cv = () => {
       </div>
       <footer className="cv__footer">
         <div className="cv__footer--copyright">
-          <img src={Logo} alt="logo du site" />
-          <p>Damien Courcoux © 2021</p>
+          <Link to="/"><img src={Logo} alt="logo du site" /></Link>
+          <Link to="/">Damien Courcoux © 2021</Link>
         </div>
         <ul className="cv__footer--reseaux">
           <li>

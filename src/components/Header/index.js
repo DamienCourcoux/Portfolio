@@ -68,8 +68,8 @@ const Header = () => {
         </div>
         <footer className="header__footer">
           <div className="header__footer--copyright">
-            <img src={Logo} alt="logo du site" />
-            <p>Damien Courcoux © 2021</p>
+            <Link to="/"><img src={Logo} alt="logo du site" /></Link>
+            <Link to="/">Damien Courcoux © 2021</Link>
           </div>
           <ul className="header__footer--reseaux">
             <li>

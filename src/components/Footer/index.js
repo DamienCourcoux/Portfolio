@@ -1,4 +1,6 @@
 // == Import
+import { Link } from 'react-router-dom';
+
 import {
   FaLinkedin,
   FaGithub,
@@ -12,8 +14,8 @@ import './footer.scss';
 const Footer = () => (
   <footer className="footer">
     <div className="footer__copyright">
-      <img src={Logo} alt="logo du site" />
-      <p>Damien Courcoux © 2021</p>
+      <Link to="/"><img src={Logo} alt="logo du site" /></Link>
+      <Link to="/">Damien Courcoux © 2021</Link>
     </div>
     <ul className="footer__reseaux">
       <li>

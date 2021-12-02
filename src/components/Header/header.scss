@@ -140,10 +140,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
         width: 50px;
       }
 
-      p {
+      a {
         font-size: 1rem;
         text-transform: none;
         margin-left: 0.5rem;
+        padding: 0 !important;
+
+        &:hover {
+          color: inherit !important;
+        }
       }
     }
 
