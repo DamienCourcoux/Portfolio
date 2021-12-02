@@ -20,12 +20,12 @@ const About = () => (
     </h1>
     <div className="about__container">
       <p className="about__container--paragraph paragraph1">
-        Suite à de nombreuses expériences qui ne me satisfaisait pas,
+        Suite à de nombreuses expériences qui ne me satisfaisaient pas,
         j'ai voulu me réorienter vers ma passion le numérique !
       </p>
       <p className="about__container--paragraph paragraph2">
         Avec une première formation j'ai pu mettre un pied dans le monde du Web.
-        J'y ai pu apprendre des compétences,
+        J'ai acquis des compétences,
         qui m'ont permis de travailler en tant que Freelance.
       </p>
       <p className="about__container--paragraph paragraph3">
@@ -35,7 +35,7 @@ const About = () => (
       <p className="about__container--paragraph paragraph4">
         Pour cela j'ai voulu monter en compétence,
         avec une deuxième formation réalisées en télétravail avec O'clock.
-        J'y ai pu me spécialiser en Frontend !
+        Je me suis spécialisé en Frontend !
       </p>
       <p className="about__container--paragraph paragraph5">Aujourd'hui je suis prêt à continuer mon expérience à vos côtés !!</p>
       <p className="about__container--paragraph paragraph6">Pour en apprendre plus, regardez <NavLink exact to="/moncv" title="Mon CV">mon cv</NavLink>.</p>
