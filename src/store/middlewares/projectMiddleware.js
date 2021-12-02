@@ -12,7 +12,7 @@ import {
 const projectMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     case GET_PROJECTS: {
-      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=2&direction=desc')
+      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=2&sort=created')
         .then((response) => {
           store.dispatch(createGetProjectsSuccess(response.data));
         })
@@ -23,7 +23,7 @@ const projectMiddleware = (store) => (next) => (action) => {
       break;
     }
     case GET_ALL_PROJECTS:
-      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=9&direction=desc')
+      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=9&sort=created')
         .then((response) => {
           store.dispatch(createGetAllProjectsSuccess(response.data));
         })
