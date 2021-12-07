@@ -23,7 +23,7 @@ const projectMiddleware = (store) => (next) => (action) => {
       break;
     }
     case GET_ALL_PROJECTS:
-      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=9&sort=created')
+      axios.get('https://api.github.com/users/DamienCourcoux/repos?per_page=15&sort=created')
         .then((response) => {
           store.dispatch(createGetAllProjectsSuccess(response.data));
         })
