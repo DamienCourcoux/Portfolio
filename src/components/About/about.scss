@@ -33,6 +33,7 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    height: 4rem;
   }
 
   &__container {
@@ -68,6 +69,7 @@
 @media (max-width: 560px) {
   .about__title {
     font-size: 1.5rem;
+    height: 3rem;
   }
 
   .about__container--paragraph {
