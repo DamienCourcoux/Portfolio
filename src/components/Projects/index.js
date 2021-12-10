@@ -57,7 +57,7 @@ const Projects = () => {
         <img className="projects__headband--cloud cloud3" src={Cloud1} alt="img d'un nuage pour faire de la déco sur la section home" />
         <img className="projects__headband--cloud cloud7" src={Logo} alt="img d'un nuage pour faire de la déco sur la section home" />
         <h1 className="projects__headband--title">Mes projets</h1>
-        <p className="projects__headband--subtitle"><em>importer par l'api GitHub</em></p>
+        <p className="projects__headband--subtitle"><em>importés par l'api GitHub</em></p>
       </div>
       <div className="projects__card">
         {

@@ -15,7 +15,7 @@ const LatestProjects = () => {
       <img className="latestProjects__cloud cloud2" src={Cloud2} alt="img d'un nuage pour faire de la déco sur la section home" />
       <div className="latestProjects__container">
         <h1 className="latestProjects__container--title">Mes derniers projets</h1>
-        <p className="latestProjects__container--subtitle"><em>{hasError ? 'Aucun projet en public' : 'importer par l\'api GitHub'}</em></p>
+        <p className="latestProjects__container--subtitle"><em>{hasError ? 'Aucun projet en public' : 'importés par l\'api GitHub'}</em></p>
         <div className="latestProjects__container--buttons">
           {
             hasError ? ''
