@@ -25,7 +25,7 @@ const LatestProjects = () => {
           }
           {
             hasError ? ''
-              : <NavLink exact to="/mesprojets" title="Voir tous les projets">Voir tout les projets</NavLink>
+              : <NavLink exact to="/mesprojets" title="Voir tous les projets">Voir tous les projets</NavLink>
           }
         </div>
       </div>
